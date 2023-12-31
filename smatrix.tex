@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{braket}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage[export]{adjustbox}
+\usepackage{listings}
+\usepackage{mathcomp}
+\usepackage{hyperref}
+\usepackage{bm,amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{bigints}
+\usepackage{listings}
+\usepackage{color}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=cyan,
+pdftitle={Overleaf Example},
+pdfpagemode=FullScreen,
+}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+language=Python,
+aboveskip=3mm,
+belowskip=3mm,
+stepnumber = 1,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=left,
+numberstyle=\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+\numberwithin{equation}{section}
+
+\title{S-matrix}
+\author{Ting-Kai Hsu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Interacting Field Theory}
+Let's try to figure out the \textit{two-point function} or \textit{two-point correlation Green's function},
+\begin{equation}
+    \langle\Omega|T\phi(x)\phi(y)|\Omega\rangle
+\end{equation}
+Note that $\Omega$ is ground state and $x$ and $y$ are spacetime four vectors with $T$ denoting the time-ordering operator\footnote{I couldn't figure out why we need this operator here.}.
+One must be careful that the ground state $\ket*{\Omega}$ here is different with the ground state $\ket*{0}$ in free theory\footnote{Where I don't know why?}.
+The correlation function can be seen as the amplitude of the propagation for a particle between $y$ and $x$\footnote{Does this mean there is only spacetime distance difference in these states?}.
+\subsection{Free Theory}
+The lagrangian,
+\begin{equation}
+    \mathcal{L} = (\partial_{\mu}\phi)^2 - m^{2}\phi^2
+\end{equation}
+The two-point function of free field could be directly computed by the solution of the field,
+\begin{equation}
+    \phi(\mathbf{x}) = \int{\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}\left(a_{\mathbf{p}}e^{i\mathbf{p}\cdot\mathbf{x}} + a^{\dagger}_{\mathbf{p}}e^{i\mathbf{p}\cdot\mathbf{x}}\right)}
+\end{equation}
+\section{In Out State}
+To study S-matrix, that is, the scattering process in quantum field theory, one must know what is "In" and "Out" state.
+These physical quantities are related to the interacting field and process, which is of importance.
+In interacting field theory, we have to use nonlinear term of hamiltonian and lagrangian, with different Fourier modes that represent the different particle which can occupy them respectively.
+In order to \textbf{preserve causality}, that is, to make sure the formalism obey the principle of relativity, we must have the products of fields at the \textbf{same spacetime point}.
+We've already learnt the scattering theory in quantum mechanics, and we would review them in this section.
+\\\indent First we separate the total hamiltonian into free hamiltonian (or one may say asymptotic hamiltonian) and interacting hamiltonian.
+\begin{equation}
+    H(t) = H_{0}(t) + H_{\text{int}}(t)
+\end{equation}
+Suppose we're in Heisenberg's picture.
+
+\end{document}
