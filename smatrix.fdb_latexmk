@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1704037653 "c:/Users/User/Documents/GitHub/QFT2/smatrix.tex" "smatrix.pdf" "smatrix" 1704037655 0
+["pdflatex"] 1704038441 "c:/Users/User/Documents/GitHub/QFT2/smatrix.tex" "smatrix.pdf" "smatrix" 1704038442 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136743454 2172 fd0c924230362ff848a33632ed45dc23 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/times/ptmb8r.tfm" 1136743454 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -152,11 +152,11 @@
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1693810728 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1701220469 9292 94590166cbc6b843b5405967a9d89ad7 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693810789 23169141 993e65cef8809479343a59b58963b8f9 ""
-  "c:/Users/User/Documents/GitHub/QFT2/smatrix.tex" 1704037653 3613 11aa66f91bd66ce222e5e3c7f0f4f3d9 ""
-  "smatrix.aux" 1704037654 939 ea7561a0b5364a6fc09d3f1e1a8a45d5 "pdflatex"
-  "smatrix.out" 1704037654 393 6fcab1911a0c2ac476ee8131a8ce749a "pdflatex"
-  "smatrix.tex" 1704037653 3613 11aa66f91bd66ce222e5e3c7f0f4f3d9 ""
-  "smatrix.toc" 1704037654 225 583bd326706328a89f00d589b10f190b "pdflatex"
+  "c:/Users/User/Documents/GitHub/QFT2/smatrix.tex" 1704038440 4066 668e0d01b1c0389aaed0ac20aa1fa13d ""
+  "smatrix.aux" 1704038442 939 ea7561a0b5364a6fc09d3f1e1a8a45d5 "pdflatex"
+  "smatrix.out" 1704038442 393 6fcab1911a0c2ac476ee8131a8ce749a "pdflatex"
+  "smatrix.tex" 1704038440 4066 668e0d01b1c0389aaed0ac20aa1fa13d ""
+  "smatrix.toc" 1704038442 225 583bd326706328a89f00d589b10f190b "pdflatex"
   (generated)
   "smatrix.aux"
   "smatrix.log"
