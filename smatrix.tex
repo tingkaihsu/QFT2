@@ -99,7 +99,40 @@ Please note that here \textit{negative} and \textit{positive} doesn't mean the e
 \subsection{Causality}
 
 \section{Perturbation Expansion}
-Back to eq(\hyperref[1.1]{1.1})
+Back to eq(\hyperref[1.1]{1.1}).
+As we did the free field theory, we consider the field in Heisenberg's picture,
+\begin{equation}
+    \phi(x) = e^{iH(t-t_0)}\phi(t_0,\mathbf{x})e^{-iH(t-t_0)}
+\end{equation}
+where the hamiltonian is the sum of free hamiltonian part and interaction hamiltonian part,
+\begin{equation}
+    H = H_0 + H_{\text{int}} = H_0 + \int\,d^3x\,\frac{\lambda}{4!}\phi^{4}(t_0,\mathbf{x})
+\end{equation}
+If we consider a special case that no interaction exist ($\lambda = 0$), we got,
+\begin{equation}
+    \phi_{\text{I}}(x) = e^{iH_0(t-t_0)}\phi(t_0, \mathbf{x})e^{-iH_0(t-t_0)} = \int{\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left(a_{\mathbf{p}}e^{-ip\cdot x} + a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}\right)}
+\end{equation}
+Note that in the integral we have $x^0 = t - t_0$ and call this quantity \textit{interaction picture field}.
+Now we try to express the original field in Heisenberg's picture in terms of interaction picture field.
+\begin{equation}
+    \phi(x) = e^{iH(t-t_0)}e^{-iH_0(t-t_0)}\phi_{\text{I}}(x)e^{iH_0(t-t_0)}e^{-iH(t-t_0)}
+\end{equation}
+If we rewrite it and define a unitary operator,
+\begin{equation}
+    \begin{split}
+        U(t, t_0) = e^{iH_0(t-t_0)}e^{-iH(t-t_0)}\\
+        \phi_{\text{I}}(x) = U(t,t_0)\phi(x)U^{\dagger}(t,t_0)
+    \end{split}
+\end{equation}
+known as the interaction picture propagator or time-evolution operator. 
+In quantum mechanics, we know that time-evolution operator would statisfies Schr$\ddot{\text{o}}$dinger's equation.
+\begin{equation}
+    \begin{split}
+        i\frac{\partial}{\partial t}U(t, t_0) = i\left(iH_0e^{iH_0(t-t_0)}e^{-iH(t-t_0)}-ie^{iH_0(t-t_0)}He^{-iH(t-t_0)}\right)\\
+        =e^{iH_0(t-t_0)}(H-H_0)e^{-iH(t-t_0)}\\
+        =e^{iH_0(t-t_0)}(H_{\text{int}})\,e^{}\,e^{-iH(t-t_0)}
+    \end{split}
+\end{equation} 
 
 \section{In Out State}
 To study S-matrix, that is, the scattering process in quantum field theory, one must know what is "In" and "Out" state.
