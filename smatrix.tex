@@ -111,7 +111,7 @@ where the hamiltonian is the sum of free hamiltonian part and interaction hamilt
 If we consider a special case that no interaction exist ($\lambda = 0$), we got,
 \begin{equation}
     \phi_{\text{I}}(x) = e^{iH_0(t-t_0)}\phi(t_0, \mathbf{x})e^{-iH_0(t-t_0)} = \int{\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left(a_{\mathbf{p}}e^{-ip\cdot x} + a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}\right)}
-\end{equation}
+\end{equation}\label{2.3}
 Note that in the integral we have $x^0 = t - t_0$ and call this quantity \textit{interaction picture field}.
 Now we try to express the original field in Heisenberg's picture in terms of interaction picture field.
 \begin{equation}
@@ -130,9 +130,26 @@ In quantum mechanics, we know that time-evolution operator would statisfies Schr
     \begin{split}
         i\frac{\partial}{\partial t}U(t, t_0) = i\left(iH_0e^{iH_0(t-t_0)}e^{-iH(t-t_0)}-ie^{iH_0(t-t_0)}He^{-iH(t-t_0)}\right)\\
         =e^{iH_0(t-t_0)}(H-H_0)e^{-iH(t-t_0)}\\
-        =e^{iH_0(t-t_0)}(H_{\text{int}})\,e^{}\,e^{-iH(t-t_0)}
+        =e^{iH_0(t-t_0)}(H_{\text{int}})\,e^{-iH_0(t-t_0)}\,e^{iH_0(t-t_0)}e^{-iH(t-t_0)}\\
+        =H_{\text{int, I}}(t)U(t, t_0)
     \end{split}
-\end{equation} 
+\end{equation}\label{2.6}
+The definition of interaction hamiltonian in interaction picture is similar to eq(\hyperref[2.3]{2.3}),
+\begin{equation}
+    H_{\text{int. I}}(t) = e^{iH_0(t-t_0)}H_{\text{int, I}}e^{-iH_0(t-t_0)} = \int{d^3x\frac{\lambda}{4!}\phi_{\text{I}}^{4}(x)}
+\end{equation}
+Next, we should be able to find the explicit solution to eq(\hyperref[2.6]{2.6}) with initial condition $U(t_0, t_0) = 1$, by iterating the differential equation.
+\begin{equation}
+    U(t,t_0) = 1-i\int_{t_0}^{t}{dt_1\,H_{\text{int, I}}(t_1)U(t_1, t_0)}
+\end{equation}
+\[ = 1-i\int_{t_0}^{t}{dt_1\,H_{\text{int, I}}(t_1)\left(1-i\int_{t_0}^{t_1}{dt_2\,H_{\text{int, I}}(t_2)U(t_2, t_0)}\right)} \]
+\[ = 1+(-i)\int_{t_0}^{t}{dt_1\,H_{\text{int, I}}(t_1)} + (-i)^2\int_{t_0}^{t}dt_1\int_{t_0}^{t_1}dt_2\,H_{\text{int, I}}(t_1)H_{\text{int, I}}(t_2)+\cdots\]
+Now consider \textit{time order operator},
+\begin{equation}
+    \int_{t_0}^{t}dt_1\int_{t_0}^{t_1}dt_2{\,H_{\text{int, I}}(t_1)H_{\text{int, I}}(t_2)} = \frac{1}{2}\int_{t_0}^{t}dt_1\int_{t_0}^{t}dt_2{T\left\{H_{\text{int, I}}(t_1)H_{{\text{int, I}}}(t_2)\right\}}
+\end{equation}
+Generally, we get,
+
 
 \section{In Out State}
 To study S-matrix, that is, the scattering process in quantum field theory, one must know what is "In" and "Out" state.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.4)  1 JAN 2024 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.4)  1 JAN 2024 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,22 +412,27 @@ Overfull \hbox (9.332pt too wide) in paragraph at lines 126--129
 \OT1/ptm/m/n/12 tum me-chan-ics, we know that time-evolution op-er-a-tor would stat-is-fies Schr$[]$dinger's
  []
 
+
+Overfull \hbox (2.65959pt too wide) in paragraph at lines 136--138
+[] \OT1/ptm/m/n/12 The def-i-ni-tion of in-ter-ac-tion hamil-to-nian in in-ter-ac-tion pic-ture is sim-i-lar to eq([][]2.3[][]), 
+ []
+
 [3] [4] (smatrix.aux)
 Package rerunfilecheck Info: File `smatrix.out' has not changed.
 (rerunfilecheck)             Checksum: 7D5C23B57DAFD208F277A603D8A1501E;651.
  ) 
 Here is how much of TeX's memory you used:
- 13192 strings out of 476331
- 203739 string characters out of 5797584
+ 13197 strings out of 476331
+ 203785 string characters out of 5797584
  1861660 words of memory out of 5000000
- 33347 multiletter control sequences out of 15000+600000
+ 33349 multiletter control sequences out of 15000+600000
  550096 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,18n,77p,419b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,18n,77p,419b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on smatrix.pdf (4 pages, 175339 bytes).
+Output written on smatrix.pdf (4 pages, 179335 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
