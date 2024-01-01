@@ -66,8 +66,8 @@ The lagrangian,
 \end{equation}
 The two-point function of free field could be directly computed by the solution of the field,
 \begin{equation}
-    \phi(\mathbf{x}) = \int{\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}\left(a_{\mathbf{p}}e^{i\mathbf{p}\cdot\mathbf{x}} + a^{\dagger}_{\mathbf{p}}e^{i\mathbf{p}\cdot\mathbf{x}}\right)}
-\end{equation}
+    \phi(\mathbf{x}) = \int{\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left(a_{\mathbf{p}}e^{-i\mathbf{p}\cdot\mathbf{x}} + a^{\dagger}_{\mathbf{p}}e^{i\mathbf{p}\cdot\mathbf{x}}\right)}
+\end{equation}\label{1.3}
 This is the form in Schr$\ddot{\text{o}}$dinger picture, and next we should consider the time evolution of this field operator, that is, in Heisenberg's picture.
 \begin{equation}
     \phi(x) = e^{iHt}\phi(\mathbf{x})e^{-iHt}
@@ -80,7 +80,19 @@ Also note that the creator and annihilator would have the following relation wit
     \end{split}
 \end{equation}
 These are the properties of the annihilator and creator, which are related to SHO in quantum mechanics.
-
+Thus we have,
+\begin{equation}
+    \begin{split}
+        e^{iHt}a_{\mathbf{p}}e^{-iHt} = a_{\mathbf{p}}e^{i(H-E_{\mathbf{p}})t}e^{-iHt} = a_{\mathbf{p}}e^{-iE_{\mathbf{p}}t}\\
+        e^{iHt}a^{\dagger}_{\mathbf{p}}e^{-iHt} = a_{\mathbf{p}}e^{i(H+E_{\mathbf{p}})t}e^{-iHt} = a_{\mathbf{p}}e^{iE_{\mathbf{p}}t}
+    \end{split}
+\end{equation}
+Then eq(\hyperref[1.3]{1.3}) becomes,
+\begin{equation}
+    \phi(x) = \int{\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left(a_{\mathbf{p}}e^{ip\cdot x} + a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}\right)}
+\end{equation}
+with $p_0 = E_{\mathbf{p}}$
+\\\indent \textit{\textbf{Remark:}} 
 \section{In Out State}
 To study S-matrix, that is, the scattering process in quantum field theory, one must know what is "In" and "Out" state.
 These physical quantities are related to the interacting field and process, which is of importance.
